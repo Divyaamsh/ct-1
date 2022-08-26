@@ -47,7 +47,7 @@ void Repeating(int arr[], int n){
         for (int i = 0; i < max + 1; i++)
             if (a[i] && min > a[i] && b[i])
                 min = a[i];
-        cout << "The minimum index of the repeating element is "<< arr[min-1] << endl;
+        cout << "The minimum index of the repeating element is "<< min-1 << endl;
     }
     cout << endl;
 
@@ -79,4 +79,3 @@ int main()
     return 0; 
 
 }
-
