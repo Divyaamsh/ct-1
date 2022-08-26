@@ -7,11 +7,9 @@
 using namespace std;
  
 
-void Repeating(int arr[], int n)
-{
+void Repeating(int arr[], int n){
      
-   
-    int k = 0;
+    int val = 0;
  
     
     int max = n;
@@ -31,7 +29,7 @@ void Repeating(int arr[], int n)
         if (a[arr[i]])
         {
             b[arr[i]] = 1;
-            k = 1;
+            val = 1;
             continue;
         }
         else
@@ -39,7 +37,7 @@ void Repeating(int arr[], int n)
             a[arr[i]] = i+1;
     }
  
-    if (k == 0)
+    if (val == 0)
         cout << "Invalid Input" << endl;
     else
     {
