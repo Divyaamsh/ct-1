@@ -46,13 +46,13 @@ int main(){
 
         vector<int> v;
         int flag = 0;
-        int repeat = 0;
         for(int i=0; i<n; i++){
             if(arr[i] != start){
                flag = 1;
-               repeat = repeating(arr,n,v);
+               repeating(arr,n,v);
                break; 
             }
+            start++;
         }
 
         if(flag == 0){
@@ -69,4 +69,3 @@ int main(){
 
          return 0;
 }
-
