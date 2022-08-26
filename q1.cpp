@@ -7,7 +7,7 @@
 using namespace std;
  
 
-void printFirstRepeating(int arr[], int n)
+void Repeating(int arr[], int n)
 {
      
    
@@ -52,6 +52,7 @@ void printFirstRepeating(int arr[], int n)
         cout << "The minimum index of the repeating element is "<< arr[min-1] << endl;
     }
     cout << endl;
+
 }
  
 
@@ -76,7 +77,7 @@ int main()
         return 0;
    }
 
-    printFirstRepeating(arr, n);
+    Repeating(arr, n);
     return 0; 
 
 }
