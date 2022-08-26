@@ -15,7 +15,7 @@ void repeating(int *arr,int n,vector<int> &v){
                     while(arr[i] == arr[i+1]){
                          i++;
                     }
-                    i--;
+                    //i--;
                 }
              }
              return ;
