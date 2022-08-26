@@ -19,6 +19,17 @@ int repeating(int *arr,int n,vector<int> v){
 int main(){
         int n;
         cin>>n;
+ 
+        try {
+          if (n < 0){
+             throw n;
+           }
+        }
+        catch (int p ) {
+             cout << "Exception Caught \n";
+             return 0;
+        }
+
         int *arr = new int[n];
 
         for(int i=0; i<n; i++){
@@ -46,7 +57,7 @@ int main(){
             cout << "The array does not contain consecutive integers as element " ;
             int kk = v.size();
             for(int i=0 ;i<kk; i++){
-                cout << v[i] << " ";
+                cout << v[i] << " , ";
             }
             cout << "is repeated" << endl;
         }
